@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokémon Search App</title>
+  </head>
+  <body>
+    <main>
+      <div class="container my-5 mx-auto">
+        <h1 class="text-muted text-center my-4">Pokémon Search</h1>
+        <form class="change-location my-4 text-center text-muted" id="pokeSearch">
+          <label for="search-input">Search for Pokémon Name or ID:</label>
+          <input type="text" id="search-input" class="form-control p-4" required />
+          <button class="form-control mt-2" id="search-button">Search</button>
+        </form>
+
+        <div class="card shadow-lg rounded d-none">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png" class="card-img-top" id="sprite" />
+          <div class="text-uppercase text-center details">
+            <div class="nameId">
+              <h4 class="text-black fw-bolder" id="pokemon-name">PIKACHU</h4>
+              <h5 class="mb-3 text-black fw-bolder" id="pokemon-id">#25</h5>
+            </div>
+            <div class="pokemon-type" id="types">
+              <p class="type electric">electric</p>
+            </div>
+            <div class="heightWeight my-3">
+              <div id="weight">Weight: 60</div>
+              <div id="height">Height: 4</div>
+            </div>
+            <div class="stats">
+              <div class="column-1">
+                <p>Base</p>
+                <p>HP:</p>
+                <p>Attack:</p>
+                <p>Defense:</p>
+                <p>Spec Attack:</p>
+                <p>Spec Defense:</p>
+                <p>Speed:</p>
+              </div>
+              <div class="column-2">
+                <p>Stats</p>
+                <p id="hp">35</p>
+                <p id="attack">55</p>
+                <p id="defense">40</p>
+                <p id="special-attack">50</p>
+                <p id="special-defense">50</p>
+                <p id="speed">90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>This project is open source. <a href="https://github.com/Lappage/Pokemon-Search-App" target="_blank">Improve this page.</a></p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
